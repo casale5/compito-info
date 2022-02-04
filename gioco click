@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+    p{
+    color: blue;
+    font-size: 50px;    
+    }
+    </style>
+  </head>
+  <body>
+    <h2>ESERCIZIO CLICK</h2>
+ 
+    <p id="demo">
+      
+    </p>
+    <p id="demo"></p>
+    <p id="out"></p>
+    <p id="nclick">0</p>
+    <button type="button" onclick="count()">clicca qui</button>
+    
+    <script>
+      let i = 0;
+      let start = Date.now();
+      let counter = 0;
+      function count() {
+       
+        counter++;
+        document.getElementById("nclick").innerHTML = counter.toString();
+      }
+    
+
+     
+    
+
+     function tempo(){
+     contatore++;
+     document.getElementById("demo").innerHTML = contatore +" ";    
+     }
+
+     function myStopFunction() {
+         clearInterval(myInterval);
+     }
+
+    </script>
+  </body>
+</html>
