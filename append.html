@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+<ul id="mylist">
+    <li>coffee</li>
+    <li>tea</li>
+</ul>
+
+
+<button onclick="myfunction()">append</button>
+
+<script>
+    function myfunction() {
+
+const node = document.createElement("li");
+const node1 = document.createElement("li");
+
+
+const textnode = document.createTextNode("bella");
+const text = document.createTextNode("ragazzuoli");
+   
+node.appendChild(textnode);
+node1.appendChild(text);
+
+document.getElementById("mylist").appendChild(node);
+document.getElementById("mylist").appendChild(node1);
+}
+</script>
+
+</body>
+</html>
